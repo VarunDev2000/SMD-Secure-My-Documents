@@ -19,6 +19,8 @@ import UserInfo from './components/userdetail/UserInfo';
 import Add from './components/userdetail/Add';
 import Edit from './components/userdetail/Edit';
 //--------------------------------
+import MainPage from './components/mainpage/MainPage';
+//--------------------------------
 
 
 
@@ -39,7 +41,7 @@ class App extends Component {
 
             <Route exact path ='/error' component = {Error}/>
             
-            <PrivateRoute exact path ='/' component = {UserInfo}/>
+            <PrivateRoute exact path ='/' component = {MainPage}/>
 
             <PrivateRoute exact path ='/change-password' component = {changePassword}/>
 

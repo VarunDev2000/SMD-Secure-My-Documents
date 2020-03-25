@@ -7,17 +7,14 @@ import { getUserdetail } from '../../actions/userdetail';
 
 class UserInfo extends React.Component{
 
-    static propTypes = {
-        userdetail: PropTypes.array.isRequired,
-    }
-
     state = {
         userdetail:{},
     }
-
+    
     static propTypes = {
-        getUserdetail: PropTypes.func.isRequired
-    }   
+        userdetail: PropTypes.array.isRequired,
+        getUserdetail: PropTypes.func.isRequired,
+    }
 
     componentDidMount() {
         this.props.getUserdetail();
